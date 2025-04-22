@@ -1,1 +1,90 @@
-
+.App {
+    text-align: center;
+    min-height: 100vh;
+background-image: url(https://plus.unsplash.com/premium_photo-1725408051956-a6dc142169bd?q=80&w=1597&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    padding: 10px;
+    border-radius: 10em;
+    
+  }
+  .city-list {
+    padding: 20px;
+  }
+  
+  .cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 280px;
+  
+  }
+  
+  .city-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+  }
+  
+  .city-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loading {
+    font-size: 1.2rem;
+    margin-top: 50px;
+  }
+  .weather-detail {
+    padding: 20px;
+  }
+  
+  .weather-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .weather-icon {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .weather-info {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .weather-info p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .error {
+    color: red;
+    font-size: 1.2rem;
+    margin-top: 50px;
+  }
+  .navbar {
+    background-color:black;
+    padding: 15px 20px;
+    padding: 50px 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5em;
+    margin: 70px 70px;
+  }
+  
+  .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+  }

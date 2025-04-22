@@ -1,12 +1,22 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import WeatherDetail from './components/WeatherDetail';
+import Navbar from './Navbar';
+import CityList from './components/CityList';
+import './App.css';
 
-import React from 'react'
-
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  )
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<CityList />} />
+          <Route path="/weather/:cityName" element={<WeatherDetail />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
